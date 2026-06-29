@@ -1,63 +1,58 @@
 # AI-GROQ-Personality
 
-# Chatbot IA avec Python & Groq API
-
-Un chatbot conversationnel développé en **Python** utilisant l'API **Groq** pour générer des réponses grâce à un modèle de langage.
-
-## Présentation
-
-Ce projet est un chatbot en ligne de commande capable de répondre aux questions de l'utilisateur en utilisant l'API Groq. Il envoie les messages au modèle de langage et affiche la réponse dans le terminal.
+Un chatbot conversationnel développé en Python utilisant l'API Groq. Le programme permet d'interagir avec un modèle de langage en définissant une personnalité et en générant des réponses adaptées aux messages de l'utilisateur.
 
 ## Fonctionnalités
 
 - Conversation en temps réel
-- Génération de réponses via l'API Groq
-- Utilisation d'une clé API sécurisée avec un fichier `.env`
-- Développé entièrement en Python
-- Architecture simple et facilement extensible
+- Utilisation de l'API Groq
+- Personnalité personnalisable du chatbot
+- Gestion sécurisée de la clé API avec un fichier `.env`
+- Projet simple et facilement extensible
 
-## Technologies utilisées
+## Technologies
 
 - Python 3
 - Groq API
 - python-dotenv
-- groq
 
 ## Structure du projet
 
 ```text
-chatbot-groq/
-│── chatbot.py
+AI-GROQ-Personality/
 │── .env
-│── requirements.txt
+│── .gitignore
+│── main.py
 │── README.md
+│── requirements.txt
+│── env/
 ```
 
 ## Installation
 
-### 1. Cloner le dépôt
+### 1. Cloner le projet
 
 ```bash
-git clone https://github.com/yahiathiernom-star/AI-GROQ-Personality
+git clone https://github.com/votre-utilisateur/AI-GROQ-Personality.git
 cd AI-GROQ-Personality
 ```
 
 ### 2. Créer un environnement virtuel
 
 ```bash
-python -m venv .venv
+python -m venv env
 ```
 
-#### Windows
+### Windows
 
 ```bash
-.venv\Scripts\activate
+env\Scripts\activate
 ```
 
-#### macOS / Linux
+### macOS / Linux
 
 ```bash
-source .venv/bin/activate
+source env/bin/activate
 ```
 
 ### 3. Installer les dépendances
@@ -68,40 +63,36 @@ pip install -r requirements.txt
 
 ## Configuration
 
-Créer un fichier `.env` à la racine du projet :
+Créer un fichier `.env` :
 
 ```env
-API_KEY=votre_cle_api
+GROQ_API_KEY=Votre_Clé_API
 ```
 
-## Lancement
-
-Exécuter la commande suivante :
+## Lancer le projet
 
 ```bash
-python chatbot.py
+python main.py
 ```
 
-## Exemple d'utilisation
+## Exemple
 
 ```text
 Vous : Bonjour
 
-Bot : Bonjour ! Comment puis-je vous aider aujourd'hui ?
+Assistant : Bonjour ! Comment puis-je vous aider aujourd'hui ?
 
-Vous : Explique-moi le machine learning.
+Vous : Qui es-tu ?
 
-Bot : Le machine learning est une branche de l'intelligence artificielle...
+Assistant : Je suis un assistant conversationnel utilisant l'API Groq.
 ```
 
 ## Dépendances
 
-Les principales bibliothèques utilisées sont :
-
 - groq
 - python-dotenv
 
-Pour générer le fichier `requirements.txt` :
+Pour générer le fichier des dépendances :
 
 ```bash
 pip freeze > requirements.txt
@@ -109,15 +100,13 @@ pip freeze > requirements.txt
 
 ## Améliorations possibles
 
-- Ajouter une interface graphique avec Tkinter ou CustomTkinter
-- Développer une interface web avec Flask ou Streamlit
+- Ajouter une interface graphique
 - Sauvegarder l'historique des conversations
+- Choisir différents modèles Groq
 - Ajouter une mémoire de conversation
-- Permettre le choix du modèle Groq
-- Déployer l'application sur un serveur
+- Déployer l'application sur le Web
 
 ## Auteur
 
 Yahia Thierno Maiga
-
-Étudiant en Data & IA.
+Étudiant en Data & IA à HETIC
