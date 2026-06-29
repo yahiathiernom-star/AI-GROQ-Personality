@@ -33,7 +33,7 @@ AI-GROQ-Personality/
 ### 1. Cloner le projet
 
 ```bash
-git clone https://github.com/votre-utilisateur/AI-GROQ-Personality.git
+git clone https://github.com/yahiathiernom-star/AI-GROQ-Personality
 cd AI-GROQ-Personality
 ```
 
